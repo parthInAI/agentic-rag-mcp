@@ -1,0 +1,35 @@
+agent:
+  name: rag-agent
+  version: "1.0"
+  description: "Agentic RAG system powered by MCP, ChromaDB, and Ollama"
+
+llm:
+  provider: ollama
+  endpoint: "http://localhost:11434/api/generate"
+  model: mistral        # Switch to llama3, phi3, etc. as needed
+  max_tokens: 1024
+  temperature: 0.7
+
+vector_store:
+  provider: chromadb
+  persist_directory: "./vector_store"
+  collection_name: docs
+  embedding_model: "all-MiniLM-L6-v2"
+  n_results: 3
+
+memory:
+  enabled: true
+  store_path: "./memory/agent_memory.json"
+  max_history: 20       # Max conversation turns to keep
+
+server:
+  host: "0.0.0.0"
+  port: 5000
+
+tools:
+  - name: document_search
+    description: "Search over ingested documents using semantic similarity"
+    enabled: true
+  - name: web_search_fallback
+    description: "Fallback DuckDuckGo web search when docs are insufficient"
+    enabled: true
