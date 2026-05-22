@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Project runtime data
+vector_store/
+memory/agent_memory.json
+data/sample_docs/*.pdf
+data/sample_docs/*.txt
+
+# Env
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
