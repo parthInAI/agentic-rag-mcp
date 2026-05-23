@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Agentic RAG — MCP-Powered System
+# 🧠 Agentic RAG - MCP-Powered System
 
 **A fully local, agentic Retrieval-Augmented Generation pipeline**  
 Built with FastAPI · ChromaDB · Ollama · Streamlit · Sentence Transformers
@@ -20,7 +20,7 @@ Built with FastAPI · ChromaDB · Ollama · Streamlit · Sentence Transformers
 
 ## 📌 Overview
 
-This project implements a fully **local** agentic RAG (Retrieval-Augmented Generation) system using the **Model Context Protocol (MCP)** pattern to modularly connect an LLM to external tools — a vector database, a web search fallback, and persistent conversation memory.
+This project implements a fully **local** agentic RAG (Retrieval-Augmented Generation) system using the **Model Context Protocol (MCP)** pattern to modularly connect an LLM to external tools - a vector database, a web search fallback, and persistent conversation memory.
 
 The agent:
 - **Retrieves** relevant context from your documents via semantic search (ChromaDB)
