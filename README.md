@@ -28,7 +28,7 @@ The agent:
 - **Remembers** conversation history across sessions via a JSON memory store
 - **Generates** grounded answers using a local LLM served by Ollama
 
-Everything runs **100% locally** — no OpenAI, no cloud APIs, no data leaving your machine.
+Everything runs **100% locally** - no OpenAI, no cloud APIs, no data leaving your machine.
 
 ---
 
