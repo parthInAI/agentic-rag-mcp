@@ -79,11 +79,11 @@ streamlit run app.py
 
 ## Key design decisions
 
-**Why MCP?** Model Context Protocol standardises how AI agents call tools. Using it here means the agent-tool interface is swappable — any MCP-compatible client can connect to this server without code changes.
+**Why MCP?** Model Context Protocol standardises how AI agents call tools. Using it here means the agent-tool interface is swappable any MCP-compatible client can connect to this server without code changes.
 
 **Why local-only?** No API keys, no usage costs, no data leaving your machine. The full pipeline runs on a laptop with 16GB RAM.
 
-**Why persistent memory?** Most demos reset on every session. This one stores conversation history to disk so the agent remembers context across separate runs — closer to how a real production system would behave.
+**Why persistent memory?** Most demos reset on every session. This one stores conversation history to disk so the agent remembers context across separate runs closer to how a real production system would behave.
 
 ---
 
